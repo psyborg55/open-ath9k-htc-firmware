@@ -253,47 +253,6 @@ HAL_RATE_TABLE ar5416_11ng_table = {
 	},
 };
 
-#ifdef ATH_SUPPORT_A_MODE
-
-HAL_RATE_TABLE ar5416_11na_table = {
-
-	28,  /* number of rates */
-	{ -1 },
-	{
-		/*                                                 short            ctrl  */
-		/*                valid                rateCode Preamble  dot11Rate Rate */
-		/*[ 0]   6 Mb */ {  AH_TRUE, OFDM,    6000,    0x0b,    0x00, (0x80|12),   0 },
-		/*[ 1]   9 Mb */ {  AH_TRUE, OFDM,    9000,    0x0f,    0x00,        18,   0 },
-		/*[ 2]  12 Mb */ {  AH_TRUE, OFDM,   12000,    0x0a,    0x00, (0x80|24),   2 },
-		/*[ 3]  18 Mb */ {  AH_TRUE, OFDM,   18000,    0x0e,    0x00,        36,   2 },
-		/*[ 4]  24 Mb */ {  AH_TRUE, OFDM,   24000,    0x09,    0x00, (0x80|48),   4 },
-		/*[ 5]  36 Mb */ {  AH_TRUE, OFDM,   36000,    0x0d,    0x00,        72,   4 },
-		/*[ 6]  48 Mb */ {  AH_TRUE, OFDM,   48000,    0x08,    0x00,        96,   4 },
-		/*[ 7]  54 Mb */ {  AH_TRUE, OFDM,   54000,    0x0c,    0x00,       108,   4 },
-		/*[ 8] 6.5 Mb */ {  AH_TRUE, HT,      6500,    0x80,    0x00,         0,   0 },
-		/*[ 9]  13 Mb */ {  AH_TRUE, HT,  	 13000,    0x81,    0x00,         1,   2 },
-		/*[10]19.5 Mb */ {  AH_TRUE, HT,         19500,    0x82,    0x00,         2,   2 },
-		/*[11]  26 Mb */ {  AH_TRUE, HT,  	 26000,    0x83,    0x00,         3,   4 },
-		/*[12]  39 Mb */ {  AH_TRUE, HT,  	 39000,    0x84,    0x00,         4,   4 },
-		/*[13]  39 Mb */ {  AH_TRUE, HT,  	 39000,    0x84,    0x00,         4,   4 },
-		/*[14]  52 Mb */ {  AH_TRUE, HT,   	 52000,    0x85,    0x00,         5,   4 },
-		/*[15]  52 Mb */ {  AH_TRUE, HT,   	 52000,    0x85,    0x00,         5,   4 },
-		/*[16]58.5 Mb */ {  AH_TRUE, HT,  	 58500,    0x86,    0x00,         6,   4 },
-		/*[17]58.5 Mb */ {  AH_TRUE, HT,  	 58500,    0x86,    0x00,         6,   4 },
-		/*[18]  65 Mb */ {  AH_TRUE, HT,  	 65000,    0x87,    0x00,         7,   4 },
-		/*[19]  65 Mb */ {  AH_TRUE, HT,  	 65000,    0x87,    0x00,         7,   4 },
-		/*[20]  52 Mb */ {  AH_TRUE, HT,  	 52000,    0x8b,    0x00,        11,   4 },
-		/*[21]  78 Mb */ {  AH_TRUE, HT,  	 78000,    0x8c,    0x00,        12,   4 },
-		/*[22]  78 Mb */ {  AH_TRUE, HT,  	 78000,    0x8c,    0x00,        12,   4 },
-		/*[23] 104 Mb */ {  AH_TRUE, HT, 	104000,    0x8d,    0x00,        13,   4 },
-		/*[24] 104 Mb */ {  AH_TRUE, HT, 	104000,    0x8d,    0x00,        13,   4 },
-		/*[25] 117 Mb */ {  AH_TRUE, HT, 	117000,    0x8e,    0x00,        14,   4 },
-		/*[26] 117 Mb */ {  AH_TRUE, HT, 	117000,    0x8e,    0x00,        14,   4 },
-		/*[27] 130 Mb */ {  AH_TRUE, HT, 	130000,    0x8f,    0x00,        15,   4 },
-	},
-};
-#endif
-
 #undef	OFDM
 #undef	CCK
 #undef	TURBO
