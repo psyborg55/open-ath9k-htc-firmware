@@ -94,7 +94,7 @@
 #define WLAN_BASE_ADDRESS           0x10ff0000
 /*******************************************************************************/
 /* Reset Register*/
-#define MAGPEI_REG_RST_BASE_ADDR                    RST_BASE_ADDRESS
+#define MAGPIE_REG_RST_BASE_ADDR                    RST_BASE_ADDRESS
 
 #define REG_GENERAL_TIMER_OFFSET                    0x0
 #define REG_GENERAL_TIMER_RELOAD_OFFSET             0x4
@@ -106,7 +106,7 @@
 #define REG_REVISION_ID                             0x90
 
 
-#define MAGPEI_REG_RST_GENERAL_TIMER_ADDR       (RST_BASE_ADDRESS+REG_GENERAL_TIMER_OFFSET)
+#define MAGPIE_REG_RST_GENERAL_TIMER_ADDR       (RST_BASE_ADDRESS+REG_GENERAL_TIMER_OFFSET)
 #define MAGPIE_REG_RST_GENERAL_TIMER_RLD_ADDR   (RST_BASE_ADDRESS+REG_GENERAL_TIMER_RELOAD_OFFSET)
 #define MAGPIE_REG_RST_WDT_TIMER_CTRL_ADDR      (RST_BASE_ADDRESS+REG_WATCHDOG_TIMER_CONTROL_OFFSET)
 #define MAGPIE_REG_RST_WDT_TIMER_ADDR           (RST_BASE_ADDRESS+REG_WATCHDOG_TIMER_OFFSET)
@@ -115,7 +115,7 @@
 #define MAGPIE_REG_AHB_ARB_ADDR                 (RST_BASE_ADDRESS+REG_AHB_ARB)
 #define MAGPIE_REG_REVISION_ID_ADDR             (RST_BASE_ADDRESS+REG_REVISION_ID)
 
-#define MAGPEI_REG_RST_GENERAL_TIMER            (*((volatile u32_t*)(MAGPEI_REG_RST_GENERAL_TIMER_ADDR)))
+#define MAGPIE_REG_RST_GENERAL_TIMER            (*((volatile u32_t*)(MAGPIE_REG_RST_GENERAL_TIMER_ADDR)))
 #define MAGPIE_REG_RST_GENERAL_TIMER_RLD        (*((volatile u32_t*)(MAGPIE_REG_RST_GENERAL_TIMER_RLD_ADDR)))
 #define MAGPIE_REG_RST_WDT_TIMER_CTRL           (*((volatile u32_t*)(MAGPIE_REG_RST_WDT_TIMER_CTRL_ADDR)))
 #define MAGPIE_REG_RST_WDT_TIMER                (*((volatile u32_t*)(MAGPIE_REG_RST_WDT_TIMER_ADDR)))
@@ -269,17 +269,17 @@
 
 /*******************************************************************************/
 /* SPI Flash Register*/
-#define MAGPEI_REG_SPI_BASE_ADDR                    SPI_REG_BASE_ADDRESS
+#define MAGPIE_REG_SPI_BASE_ADDR                    SPI_REG_BASE_ADDRESS
 
 #define REG_SPI_CS_OFFSET                           0x0
 #define REG_SPI_AO_OFFSET                           0x4
 #define REG_SPI_D_OFFSET                            0x8
 #define REG_SPI_CLKDIV_OFFSET                       0x1C
 
-#define MAGPIE_REG_SPI_CS_ADDR                      (MAGPEI_REG_SPI_BASE_ADDR + REG_SPI_CS_OFFSET)
-#define MAGPIE_REG_SPI_AO_ADDR                      (MAGPEI_REG_SPI_BASE_ADDR + REG_SPI_AO_OFFSET)
-#define MAGPIE_REG_SPI_D_ADDR                       (MAGPEI_REG_SPI_BASE_ADDR + REG_SPI_D_OFFSET)
-#define MAGPIE_REG_SPI_CLKDIV_ADDR                  (MAGPEI_REG_SPI_BASE_ADDR + REG_SPI_CLKDIV_OFFSET)
+#define MAGPIE_REG_SPI_CS_ADDR                      (MAGPIE_REG_SPI_BASE_ADDR + REG_SPI_CS_OFFSET)
+#define MAGPIE_REG_SPI_AO_ADDR                      (MAGPIE_REG_SPI_BASE_ADDR + REG_SPI_AO_OFFSET)
+#define MAGPIE_REG_SPI_D_ADDR                       (MAGPIE_REG_SPI_BASE_ADDR + REG_SPI_D_OFFSET)
+#define MAGPIE_REG_SPI_CLKDIV_ADDR                  (MAGPIE_REG_SPI_BASE_ADDR + REG_SPI_CLKDIV_OFFSET)
 
 #endif
 
